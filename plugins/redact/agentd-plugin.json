@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "redact",
+  "name": "Local redaction",
+  "version": "1.0.0",
+  "hooks": {
+    "before-send": { "command": ["python3", "hook.py"], "timeoutSeconds": 60 }
+  }
+}
