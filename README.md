@@ -6,7 +6,7 @@ The plugin catalogue AgentD Next installs from: the Plugins section of the Agent
 
 | Plugin | What it does |
 |---|---|
-| [Local redaction](plugins/redact) | Replaces names, contact details, ID numbers and credentials in a message with placeholders before it is sent, on your own computer. |
+| [Local redaction](plugins/redact) | Replaces names, contact details, ID numbers and credentials in a message and its attachments with placeholders before it is sent, on your own computer. Word documents and PDFs with a text layer go as redacted text. |
 
 A plugin is a folder with an `agentd-plugin.json` manifest. Its `before-send` hook is a command that reads one JSON object on stdin and prints one decision on stdout: pass, rewrite or block. Anything else stops the send.
 
