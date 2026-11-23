@@ -4,15 +4,15 @@
     {
       "id": "redact",
       "name": "Local redaction",
-      "description": "Replaces names, organizations, places, contact details, ID numbers, credentials and dates in a message and its text attachments with placeholders before it is sent. Runs on your own computer; you review the change before it goes. Needs Python 3.10+ and about 2 GB for its model.",
+      "description": "Replaces names, organizations, places, contact details, ID numbers, credentials and dates in a message and its attachments with placeholders before it is sent; Word documents and PDFs with a text layer go as redacted text. Runs on your own computer; you review the change before it goes. Needs Python 3.10+ and about 2 GB for its model.",
       "author": "LibraOS",
       "licence": "MIT",
-      "reviewedAt": "2026-11-22",
-      "version": "1.0.0",
+      "reviewedAt": "2026-11-23",
+      "version": "1.1.0",
       "source": {
         "url": "https://github.com/libraos/plugins",
         "path": "plugins/redact",
-        "sha": "8be9a38c36341074eca5ec70425780577a614c39",
+        "sha": "fdbf1c326aa9f02b110c4b16b6ef814a762a4cea",
         "notices": [
           "LICENSE"
         ]
