@@ -17,6 +17,23 @@
           "LICENSE"
         ]
       }
+    },
+    {
+      "id": "outreach",
+      "name": "Outreach mailer",
+      "description": "Gives Claude Code and Codex agents the outreach mailer's tools for one project: search contacts, recipient histories and broadcasts, write and test-send a draft, and prepare a send for a person to confirm in the console. It cannot send. Needs the outreach program on PATH, the service URL and a project API token.",
+      "author": "LibraOS",
+      "licence": "MIT",
+      "reviewedAt": "2026-11-25",
+      "version": "0.1.0",
+      "source": {
+        "url": "https://github.com/libraos/plugins",
+        "path": "plugins/outreach",
+        "sha": "7ba31cb97518c4f244ee1c802142aa6401b64641",
+        "notices": [
+          "LICENSE"
+        ]
+      }
     }
   ]
 }
