@@ -68,7 +68,7 @@ No tool sends, schedules, pauses, resumes or cancels a broadcast, imports contac
 
 ## Catalogue
 
-This plugin is not in `catalog.json` yet. Its entry, with the reviewed commit, is added at review after this folder is merged; until then it cannot be installed from Settings → Plugins.
+The catalogue entry pins the reviewed commit of this folder. Install it from Settings → Plugins, in a LibraOS Next build that includes plugin MCP servers (libraos/next#282).
 
 ## Tests
 
