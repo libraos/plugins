@@ -2,7 +2,7 @@
 
 Replaces names, organizations, places, contact details, ID numbers, financial and credential strings and dates in a message and its attachments (text files, Word documents and PDFs) with placeholders such as `[PERSON_1]` before the message goes to the agent. You see the change and confirm or edit it before it is sent.
 
-Detection runs on the computer that runs AgentD Next (with a remote or mobile client, that is the server, not your phone), with the [veil-detect](https://huggingface.co/libraos/veil-detect) v1.0.0 model and rules for e-mail addresses, phone numbers, API keys and tokens, Chinese ID card numbers and unified social credit codes, and for details in legal documents:
+Detection runs on the computer that runs LibraOS Next (with a remote or mobile client, that is the server, not your phone), with the [veil-detect](https://huggingface.co/libraos/veil-detect) v1.0.0 model and rules for e-mail addresses, phone numbers, API keys and tokens, Chinese ID card numbers and unified social credit codes, and for details in legal documents:
 
 | Placeholder                | What it covers                                                                                                                     |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ On three synthetic Chinese legal texts (a judgment excerpt, a contract clause an
 
 ## Set up
 
-Needs Python 3.10 or newer and about 2 GB of disk. After installing it, choose **Set up** beside it in Settings → Plugins. The computer that runs AgentD Next creates a Python environment with CPU torch, transformers and pypdf (the PDF reader, installed only if it matches its pinned sha256 hash) in the plugin's data folder (`plugins/data/redact` in AgentD Next's data folder), downloads the model and checks it; you can follow its progress there, from any client. It can be turned on once setup has finished. Choose **Set up again** to repair a damaged download. Removing the plugin offers to delete the data folder too.
+Needs Python 3.10 or newer and about 2 GB of disk. After installing it, choose **Set up** beside it in Settings → Plugins. The computer that runs LibraOS Next creates a Python environment with CPU torch, transformers and pypdf (the PDF reader, installed only if it matches its pinned sha256 hash) in the plugin's data folder (`plugins/data/redact` in LibraOS Next's data folder), downloads the model and checks it; you can follow its progress there, from any client. It can be turned on once setup has finished. Choose **Set up again** to repair a damaged download. Removing the plugin offers to delete the data folder too.
 
 Without the app, run `python3 <plugin folder>/setup_env.py` on that computer.
 
@@ -34,4 +34,4 @@ Without the app, run `python3 <plugin folder>/setup_env.py` on that computer.
 - One message can hold up to 100,000 characters; split longer ones.
 - In one conversation a value keeps its placeholder: a name sent again is `[PERSON_1]` again, even if the model does not find it the second time, and a new name gets the next number. The review shows which placeholders are new.
 - Replies show the original values in place of the placeholders, highlighted, and copying a reply gives the original values. The agent only ever sees placeholders, and files it writes keep them.
-- The plugin writes nothing to disk. AgentD Next keeps each conversation's placeholder map on the computer that runs it, readable by your user account only, and deletes it with the conversation.
+- The plugin writes nothing to disk. LibraOS Next keeps each conversation's placeholder map on the computer that runs it, readable by your user account only, and deletes it with the conversation.
