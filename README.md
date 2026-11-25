@@ -1,6 +1,6 @@
-# AgentD plugins
+# LibraOS Next plugins
 
-The plugin catalogue AgentD Next installs from: the Plugins section of the AgentD page.
+The plugin catalogue LibraOS Next installs from, in **Settings → Plugins**.
 
 `catalog.json` lists each plugin with the one commit that was reviewed. The app installs only that commit and checks every file, so a change here reaches users only after a new review updates the catalogue.
 
