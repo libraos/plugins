@@ -1,0 +1,33 @@
+{
+  "name": "libraos",
+  "owner": {
+    "name": "LibraOS"
+  },
+  "metadata": {
+    "description": "The plugin catalogue LibraOS Next installs from."
+  },
+  "plugins": [
+    {
+      "name": "redact",
+      "displayName": "Local redaction",
+      "version": "1.2.0",
+      "description": "Replaces names, organizations, places, contact details, ID numbers, credentials and dates in a message and its attachments with placeholders before it is sent; Word documents and PDFs with a text layer go as redacted text. Runs on your own computer; you review the change before it goes. Needs Python 3.10+ and about 2 GB for its model. Works in LibraOS Next only: it is a before-send hook, which Claude Code itself does not run.",
+      "author": {
+        "name": "LibraOS"
+      },
+      "license": "MIT",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/libraos/plugins",
+        "path": "plugins/redact",
+        "sha": "8767101a95ef8e4b260906755e0dcb908bf64c0e"
+      },
+      "libraos": {
+        "reviewedAt": "2026-11-27",
+        "notices": [
+          "LICENSE"
+        ]
+      }
+    }
+  ]
+}
